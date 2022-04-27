@@ -17,8 +17,18 @@ export default function DetailsScreen({ navigation }) {
             />
             <Text>Navigation.popToTop, retorna todas as telas.</Text>
             <Button 
-                title="Retornar"
+                title="Retornar todas as telas"
                 onPress={() => {navigation.popToTop()}}
+            />
+            <Text>Navigation.goBack()</Text>
+            <Button 
+                title="Voltar"
+                onPress={() => navigation.goBack()}
+            />
+            <Text>Ir para InfoScreen</Text>
+            <Button 
+                title="Ir para InfoScreen"
+                onPress={() => {navigation.navigate('Info')}}
             />
         </View>
     );
