@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from '../../Screens/HomeScreen';
 import DetailsScreen from '../../Screens/DetailsScreen';
+import InfoScreen from '../../Screens/InfoScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,11 @@ export default function Routes() {
               name="Details" 
               component={DetailsScreen} 
               options={{ title: 'Details' }}
+            />
+            <Stack.Screen 
+              name="Info"
+              component={InfoScreen}
+              options={{ title: 'Info' }}
             />
         </Stack.Navigator>
     </NavigationContainer>
